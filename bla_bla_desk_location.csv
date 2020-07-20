@@ -1,0 +1,16 @@
+LocationID,Building,Floor,Location,Type,Division,Department,Category 1,Category 2,Category 3
+William_0ecfc805e1383c0a408111971c476e243ae97a13_0,William,3,some location,DESK,WFH,dep_0,cat_0,cat_0,cat_0
+William_0ecfc805e1383c0a408111971c476e243ae97a13_1,William,2,some location,DESK,WFH,dep_1,cat_1,cat_1,cat_1
+William_0ecfc805e1383c0a408111971c476e243ae97a13_2,William,1,some location,DESK,WFH,dep_2,cat_2,cat_2,cat_2
+William_0ecfc805e1383c0a408111971c476e243ae97a13_3,William,1,some location,DESK,NHS,dep_3,cat_3,cat_3,cat_3
+William_0ecfc805e1383c0a408111971c476e243ae97a13_4,William,3,some location,DESK,WFH,dep_4,cat_4,cat_4,cat_4
+Farr_0ecfc805e1383c0a408111971c476e243ae97a13_0,Farr,1,some location,DESK,WFH,dep_0,cat_0,cat_0,cat_0
+Farr_0ecfc805e1383c0a408111971c476e243ae97a13_1,Farr,2,some location,DESK,WFH,dep_1,cat_1,cat_1,cat_1
+Farr_0ecfc805e1383c0a408111971c476e243ae97a13_2,Farr,3,some location,DESK,WFH,dep_2,cat_2,cat_2,cat_2
+Farr_0ecfc805e1383c0a408111971c476e243ae97a13_3,Farr,3,some location,DESK,NHS,dep_3,cat_3,cat_3,cat_3
+Farr_0ecfc805e1383c0a408111971c476e243ae97a13_4,Farr,1,some location,DESK,WFH,dep_4,cat_4,cat_4,cat_4
+House_0ecfc805e1383c0a408111971c476e243ae97a13_0,House,2,some location,DESK,WFH,dep_0,cat_0,cat_0,cat_0
+House_0ecfc805e1383c0a408111971c476e243ae97a13_1,House,3,some location,DESK,NHS,dep_1,cat_1,cat_1,cat_1
+House_0ecfc805e1383c0a408111971c476e243ae97a13_2,House,3,some location,DESK,NHS,dep_2,cat_2,cat_2,cat_2
+House_0ecfc805e1383c0a408111971c476e243ae97a13_3,House,3,some location,DESK,WFH,dep_3,cat_3,cat_3,cat_3
+House_0ecfc805e1383c0a408111971c476e243ae97a13_4,House,2,some location,DESK,NHS,dep_4,cat_4,cat_4,cat_4
