@@ -5,3 +5,5 @@ divisions = ['NHS', 'WFH']
 floors_qty = 3  # greater or equal 1
 start_date = '11-02-2019'
 results = ['In Use (Phone Call)', 'In Use (PC In Use)', 'Sign of Life', 'Vacant']
+meet_results = ['Meeting', 'Unoccupied (Vacant)', 'Dining', 'Private Use']
+meet_type = ['Breakout', 'Meet', 'Support', ]

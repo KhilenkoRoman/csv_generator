@@ -119,3 +119,5 @@ local.py
 
 # celery
 celerybeat-schedule*
+
+*.csv

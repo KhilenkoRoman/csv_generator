@@ -1,8 +1,8 @@
 from collections import OrderedDict
 import constraints as con
-import hashlib
 import datetime
 import random
+import binascii
 
 desk_location_order_map = {
             "LocationID": 1,
@@ -33,7 +33,7 @@ desk_data_order_map = {
 def generate_desk_locations():
     div_count = len(con.divisions) - 1
     desk_locations = []
-    const_hash = hashlib.sha1(str(datetime.datetime.now()).encode('utf-8')).hexdigest()
+    const_hash = binascii.crc32(str(datetime.datetime.now()).encode('utf-8'))
 
     for building in con.buildings:
         tmp = [{
@@ -56,7 +56,7 @@ def generate_desk_locations():
 def generate_desk_data(desk_locations):
     desk_data = []
     result_count = len(con.results) - 1
-    const_hash = hashlib.sha1(str(datetime.datetime.now()).encode('utf-8')).hexdigest()
+    const_hash = binascii.crc32(str(datetime.datetime.now()).encode('utf-8'))
     increment = 0
     date = datetime.datetime.strptime(con.start_date, '%d-%m-%Y')
 
