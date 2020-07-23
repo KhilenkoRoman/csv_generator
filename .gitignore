@@ -121,3 +121,4 @@ local.py
 celerybeat-schedule*
 
 *.csv
+constraints.py
