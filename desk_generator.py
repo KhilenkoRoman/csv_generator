@@ -68,7 +68,7 @@ def generate_desk_data(desk_locations):
                 "By": 'botrak',
                 "LocationID Desk": location.get('LocationID'),
                 "Code": 5871,
-                "Result": con.results[random.randint(1, result_count)],
+                "Result": con.results[random.randint(0, result_count)],
                 "Detail": None,
                 "Slot": 22789,
                 "Start": date + datetime.timedelta(days=day, hours=hour),

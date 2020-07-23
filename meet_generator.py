@@ -42,7 +42,7 @@ def generate_meet_locations():
             "Building": building,
             "Floor": random.randint(1, con.floors_qty),
             "Type": con.meet_type[random.randint(0, type_count)],
-            "Capacity": random.randint(0, 100),
+            "Capacity": random.randint(3, 30),
             "Results": 123,
             "Category 1": f"cat_{i}",
             "Category 2": f"cat_{i}",
@@ -68,12 +68,17 @@ def generate_meet_data(meet_locations):
                 "By": 'botrak',
                 "LocationID Meet": location.get('LocationID Meet'),
                 "Code": 5871,
-                "Result": con.meet_results[random.randint(1, result_count)],
-                "Detail": 'No one'  if random.randint(0, 3) == 0 else f"{random.randint(1, location['Capacity'])} people",
+                "Result": None,
+                "Detail": 'No one' if random.randint(0, 2) == 0 else f"{random.randint(1, location['Capacity'])} people",
                 "Slot": 22789,
                 "Start": date + datetime.timedelta(days=day, hours=hour),
             } for hour in [9, 10, 11, 12, 13, 14, 15, 16, 17]]
             meet_data += tmp
             increment += 1
 
+    for i in meet_data:
+        i['Result'] = 'Unoccupied (Vacant)' if i['Detail'] == 'No one' else con.meet_results[random.randint(0, result_count)]
+
     return [OrderedDict(sorted(i.items(), key=lambda x: meet_data_order_map[x[0]])) for i in meet_data]
+
+
