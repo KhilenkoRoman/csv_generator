@@ -71,7 +71,7 @@ def generate_meet_data(meet_locations):
                 "Result": None,
                 "Detail": 'No one' if random.randint(0, 2) == 0 else f"{random.randint(1, location['Capacity'])} people",
                 "Slot": 22789,
-                "Start": (date + datetime.timedelta(days=day, hours=hour)).strftime("%Y-%m-%d %H:%M"),
+                "Start": date + datetime.timedelta(days=day, hours=hour),
             } for hour in [9, 10, 11, 12, 13, 14, 15, 16, 17]]
             meet_data += tmp
             increment += 1
