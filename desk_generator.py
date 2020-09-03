@@ -71,7 +71,7 @@ def generate_desk_data(desk_locations):
                 "Result": con.results[random.randint(0, result_count)],
                 "Detail": None,
                 "Slot": 22789,
-                "Start": date + datetime.timedelta(days=day, hours=hour),
+                "Start": (date + datetime.timedelta(days=day, hours=hour)).strftime("%Y-%m-%d %H:%M"),
             } for hour in [9, 10, 11, 12, 13, 14, 15, 16, 17]]
             desk_data += tmp
             increment += 1
